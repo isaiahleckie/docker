@@ -109,7 +109,7 @@ services:
     restart: always
     ports: [ "127.0.0.1:9200:9200", "127.0.0.1:9300:9300" ]
     volumes:
-      - "${DATA_DIR}/elasticsearch:/usr/share/elasticsearch/data"
+      - "${DATA_DIR}/elasticsearch:/var/lib/elasticsearch/data"
     ulimits:
       memlock:
         soft: -1
